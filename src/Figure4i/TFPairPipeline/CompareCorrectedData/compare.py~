@@ -1,9 +1,0 @@
-import pandas as pd
-import sys
-
-if __name__ == '__main__':
-
-    corrected_contacts_path = sys.argv[1]
-    old_contacts_path = sys.argv[2]
-    corrected_contacts = pd.read_csv(corrected_contacts_path)
-    old_contacts = pd.read_csv(old_contacts_path)
