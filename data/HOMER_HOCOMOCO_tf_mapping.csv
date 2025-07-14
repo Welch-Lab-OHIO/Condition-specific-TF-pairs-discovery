@@ -1,0 +1,25 @@
+sd,HOCOMOCO NAME,Reason
+Fosl2(bZIP)/3T3L1-Fosl2-ChIP-Seq(GSE56872)/Homer,Fosl2,
+Fos(bZIP)/TSC-Fos-ChIP-Seq(GSE110950)/Homer,Fos,
+Atf3(bZIP)/GBM-ATF3-ChIP-Seq(GSE33912)/Homer,Atf3,
+BATF(bZIP)/Th17-BATF-ChIP-Seq(GSE39756)/Homer,Batf,
+JunB(bZIP)/DendriticCells-Junb-ChIP-Seq(GSE36099)/Homer,Junb,
+Fra1(bZIP)/BT549-Fra1-ChIP-Seq(GSE46166)/Homer,Fosl1,alias
+Jun-AP1(bZIP)/K562-cJun-ChIP-Seq(GSE31477)/Homer,Jun,alias
+Fra2(bZIP)/Striatum-Fra2-ChIP-Seq(GSE43429)/Homer,Fosl2,alias
+AP-1(bZIP)/ThioMac-PU.1-ChIP-Seq(GSE21512)/Homer,,AP-1 isnt specific enough
+SPL11(SBP)/col100-SPL11-DAP-Seq(GSE60143)/Homer,,Arabidopsis
+PGR(NR)/EndoStromal-PGR-ChIP-Seq(GSE69539)/Homer,Pgr,
+"GRE(NR),IR3/RAW264.7-GRE-ChIP-Seq(Unpublished)/Homer",,Cannot find any match
+TGA5(bZIP)/col-TGA5-DAP-Seq(GSE60143)/Homer,,Arabidopsis
+Bach2(bZIP)/OCILy7-Bach2-ChIP-Seq(GSE44420)/Homer,Bach2,
+wt,,
+Mef2d(MADS)/Retina-Mef2d-ChIP-Seq(GSE61391)/Homer,Mef2d,
+Mef2b(MADS)/HEK293-Mef2b.V5-ChIP-Seq(GSE67450)/Homer,Mef2b,
+At5g52660(MYBrelated)/colamp-At5g52660-DAP-Seq(GSE60143)/Homer,,Arabidopsis
+Mef2c(MADS)/GM12878-Mef2c-ChIP-Seq(GSE32465)/Homer,Mef2c,
+Mef2a(MADS)/HL1-Mef2a.biotin-ChIP-Seq(GSE21529)/Homer,Mef2a,
+Sox7(HMG)/ESC-Sox7-ChIP-Seq(GSE133899)/Homer,Sox7,
+RVE1(MYBrelated)/col-RVE1-DAP-Seq(GSE60143)/Homer,,Doesn’t seem to have a mouse match
+At3g09600(MYBrelated)/colamp-At3g09600-DAP-Seq(GSE60143)/Homer,,Arabidopsis
+AT3G10113(MYBrelated)/col-AT3G10113-DAP-Seq(GSE60143)/Homer,,Arabidopsis
