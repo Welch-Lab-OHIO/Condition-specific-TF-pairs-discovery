@@ -1,3 +1,18 @@
+"""
+====================================================================================================================
+Python script name match_motifs_to_tfs.py
+Script written by Liam Speakman
+
+Date: July 14, 2025
+
+This script takes in a .bed file with the column form "chr start stop motif - -" and maps the motif column to the corresponding gene name 
+
+Usage example:
+>>> python3 match_motifs_to_tfs.py S3_motifs_in_atac_mpbs.bed
+The above example creates a file called S3_motifs_in_atac_mpbs.corrected.bed
+
+=====================================================================================================================
+"""
 import pandas as pd
 import json
 import sys
