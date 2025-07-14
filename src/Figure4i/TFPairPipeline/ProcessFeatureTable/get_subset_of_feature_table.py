@@ -1,18 +1,22 @@
+"""
+====================================================================================================================
+Python script name get_subset_of_feature_table.py
+Script written by Michael Cooney, Liam Speakman
+
+Date: July 14, 2025
+
+This script takes in a TF feature table(TF x Window) and selects only TFs from a specified list
+
+Usage example:
+>>> python3 get_subset_of_feature_table.py sd.dataset.tfs.csv TF_list.csv sd.dataset_selected.csv
+
+=====================================================================================================================
+"""
 import pandas as pd
 import sys
 
-
-# print(sys.argv[1])
-# print(sys.argv[2])
-# print(sys.argv[3])
-# exit(0)
-
-sd_master = pd.read_csv(sys.argv[1])
-
-# prior1_tfs = sorted(list(set(pd.read_csv("TF_list_number_6.csv")["TF_list_6_nodups"].to_list())))
-# prior1_tfs = sorted(list(set(pd.read_csv("/home/user1/OU/GradSchool/ResearchWork/MultiCondition_Project/LiamYingnan_Project/240327/Input/TF_list2.csv")["feature"].to_list())))
-# prior1_tfs = sorted(list(set(pd.read_csv("/home/user1/OU/GradSchool/ResearchWork/MultiCondition_Project/LiamYingnan_Project/240801/Input/homer_tf_list_2_union.csv")["feature"].to_list())))
-prior1_tfs = sorted(list(set(pd.read_csv(sys.argv[2])['feature'].to_list())))
+feature_table = pd.read_csv(sys.argv[1])
+selected_tfs = sorted(list(set(pd.read_csv(sys.argv[2])['feature'].to_list())))
 
 def get_set_in_df(tf_list, df):
     selection = []
@@ -20,12 +24,10 @@ def get_set_in_df(tf_list, df):
         if tf in df.columns:
             selection.append(tf)
     return selection
-prior1_selection = get_set_in_df(prior1_tfs, sd_master)
+tfs_in_file = get_set_in_df(selected_tfs, feature_table)
 
-print("# of list 6 tfs in Hocomoco set:", len(prior1_selection), "out of", len(prior1_tfs))
+print("# of TF list:", len(tfs_in_file), "out of", len(selected_tfs))
 print('Missing tfs: ')
-print(set(prior1_tfs) - set(prior1_selection))
-prior1_selection.insert(0,"name")
-def save_dfs(selection, sd_master,set_name):
-    sd_master[selection].to_csv(sys.argv[3], index=False)
-save_dfs(prior1_selection, sd_master,"list_6")
+print(set(selected_tfs) - set(tfs_in_file))
+tfs_in_file.insert(0,"name")
+feature_table[tfs_in_file].to_csv(sys.argv[3], index=False)
