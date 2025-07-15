@@ -31,7 +31,7 @@ def get_intersection(*args: list[pd.DataFrame]) -> set[str]:
 
     intersection_of_indices = set(args[0]).intersection(args[1])
 
-    # check if there is a third set to be intersected
+    # Check if there is a third set to be intersected
     if len(args) > 2:
         intersection_of_indices &= set(args[2])
 
@@ -56,8 +56,8 @@ def save_region(file_path: str, save_path, features_to_use: set, fg_label: str, 
 if __name__ == '__main__':
     arglen = len(sys.argv)
     if arglen < 13:
-        print('Error: not enough arguments')
-        print('Usage: Fig4i_generate_venn_diagram.py alpha label_1 label_2 label_3 file_1 file_2 file_3 comparison_1_2 comparison_2_3 comparison_1_3 comparison_1_2_3 output_dir')
+        print('Error: not enough arguments', file=sys.stderr)
+        print('Usage: Fig4i_generate_venn_diagram.py alpha label_1 label_2 label_3 file_1 file_2 file_3 comparison_1_2 comparison_2_3 comparison_1_3 comparison_1_2_3 output_dir', file=sys.stderr)
         exit(-1)
 
     # This alpha will be used in the one-vs-all comparison
