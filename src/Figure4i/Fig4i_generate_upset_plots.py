@@ -2,8 +2,23 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import pandas as pd
 import sys
+
 # from upsetplot import plot
 from upsetplot import UpSet, from_contents
+
+"""
+<name>.py
+Script written by: <michael>
+
+Date: <date>
+
+
+<explanation>
+
+Usage example:
+>>> <usage example> 
+
+"""
 
 mpl.rcParams['figure.dpi'] = 600
 

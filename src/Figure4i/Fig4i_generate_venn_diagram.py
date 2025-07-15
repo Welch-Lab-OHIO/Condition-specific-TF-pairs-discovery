@@ -4,6 +4,19 @@ import matplotlib as mpl
 import pandas as pd
 import sys
 
+"""
+<name>.py
+Script written by: <michael>
+
+Date: <date>
+
+
+<explanation>
+
+Usage example:
+>>> <usage example> 
+
+"""
 mpl.rcParams['figure.dpi'] = 600
 
 # Take input for 2 or 3 venn
