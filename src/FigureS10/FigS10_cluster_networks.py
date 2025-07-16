@@ -12,16 +12,33 @@ Script written by: Michael Cooney
 
 Date: July 15, 2025
 
---------------------------------------------------------------------------------
-NOTE: this description is not yet complete.  The usage example still needs to
-be explained further.
---------------------------------------------------------------------------------
-
 This script generates a network and sub-networks based off features that were
 manually clustered by their appearance in the upset plot of figure 4i.
 
 Sub-networks show the features in a cluster and all features within 1 degree of
 separation from members of the cluster.
+
+
+The input file cluster_list_csv should be formatted with cluster labels as
+columns and a list of featurs listed under each cluster they belong to, e.g.:
+
+Cluster1 Cluster2 Cluster3 ...
+feature1 feature2 feature3 ...
+feature4 feature5 feature6 ...
+...      ...      ...
+
+Member lists for each cluster can be different lengths.
+
+
+The input file feature_pair_spreadsheet should be formatted with set names as
+columns and a list of feature-pairs listed under each set they belong to, e.g.:
+
+WT   WTSD  S3   S3SD WT_WTSD ...
+a_b  b_c   c_d  d_e  e_f     ...
+f_g  g_h   h_i  i_j  j_k     ...
+...  ...   ...  ...  ...
+
+Member lists for each set can be different lengths, and may be empty.
 
 Usage example:
 >>> python FigS10_cluster_networks.py cluster_list_csv 4_set_venn_list
@@ -216,4 +233,9 @@ if __name__ == '__main__':
             else:
                 adjacency[tfs[1]] = [(tfs[0], region, label_dict[tfs[0]])]
 
-    make_network(cluster_dict, adjacency, 'colored_edges')
+    # Make the entire network
+    # make_network(cluster_dict, adjacency, 'colored_edges')
+
+    # Make a sub-network for each cluster  
+    for cluster in cluster_dict:
+        make_sub_network(cluster_dict[cluster], cluster, adjacency))

@@ -21,11 +21,11 @@ The input file feature_pair_spreadsheet should be formatted with set names as
 columns and a list of feature-pairs listed under each set they belong to, e.g.:
 
 WT   WTSD  S3   S3SD WT_WTSD ...
-a_b  b_c   c_d  d_e  e_f
-f_g  g_h   h_i  i_j  j_k
+a_b  b_c   c_d  d_e  e_f     ...
+f_g  g_h   h_i  i_j  j_k     ...
 ...  ...   ...  ...  ...
 
-Member lists for each set can be different lengths, and may be empty
+Member lists for each set can be different lengths, and may be empty.
 
 Usage example:
 >>> python Fig4i_generate_upset_plot.py feature_pair_spreadsheet output_folder output_file_name plot_label 
