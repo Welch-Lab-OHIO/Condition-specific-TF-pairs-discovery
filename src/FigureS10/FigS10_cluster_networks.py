@@ -104,7 +104,6 @@ def make_sub_network(subject: list[str], key: str, network_data: dict[str: list[
             
     # Replace strings with integers in edges
     int_edges = strings_to_ints(edges)
-    print(int_edges)
     # Make the graph
     graph = ig.Graph(len(nodes), int_edges)
     graph['title'] = key
@@ -238,4 +237,4 @@ if __name__ == '__main__':
 
     # Make a sub-network for each cluster  
     for cluster in cluster_dict:
-        make_sub_network(cluster_dict[cluster], cluster, adjacency))
+        make_sub_network(cluster_dict[cluster], cluster, adjacency)
