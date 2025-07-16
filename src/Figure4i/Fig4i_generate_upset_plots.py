@@ -13,7 +13,6 @@ Script written by: Michael Cooney
 
 Date: July 15, 2025
 
-<explanation>
 This script generates an upset plot matrix showing the overlap of individual
 features across conditions, derived from a 4-set Venn diagram of feature pairs
 generated previously.
@@ -29,11 +28,11 @@ f_g  g_h   h_i  i_j  j_k
 Member lists for each set can be different lengths, and may be empty
 
 Usage example:
->>> <usage example>
 >>> python Fig4i_generate_upset_plot.py feature_pair_spreadsheet output_folder output_file_name plot_label 
 
 ================================================================================
 """
+
 mpl.rcParams['figure.dpi'] = 600
 
 if __name__ == '__main__':
