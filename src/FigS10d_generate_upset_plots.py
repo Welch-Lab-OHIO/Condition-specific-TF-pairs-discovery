@@ -28,7 +28,7 @@ f_g  g_h   h_i  i_j  j_k     ...
 Member lists for each set can be different lengths, and may be empty.
 
 Usage example:
->>> python Fig4i_generate_upset_plot.py feature_pair_spreadsheet output_folder output_file_name plot_label 
+>>> python FigS10d_generate_upset_plot.py feature_pair_spreadsheet output_folder output_file_name plot_label 
 
 ================================================================================
 """

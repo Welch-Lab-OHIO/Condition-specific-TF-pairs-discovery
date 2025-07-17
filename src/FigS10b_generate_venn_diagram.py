@@ -18,9 +18,9 @@ This script generates a 3-set Venn diagram and a spreadsheet of significant
 feature pairs using lists of feature pairs and associated p-values.  
 
 Usage examples:
->>> python Fig4i_generate_venn_diagram.py alpha label_1 label_2 label_3 file_1 file_2 file_3 comparison_1_2 comparison_2_3 comparison_1_3 comparison_1_2_3 output_dir
+>>> python FigS10b_generate_venn_diagram.py alpha label_1 label_2 label_3 file_1 file_2 file_3 comparison_1_2 comparison_2_3 comparison_1_3 comparison_1_2_3 output_dir
 
->>> python Fig4i_generate_venn_diagram.py 0.001 WT_WTSD WT_S3 WT_S3SD WT_vs_WTSD.csv WT_vs_S3.csv WT_vs_S3SD.csv WT_vs_WTSD_S3.csv WT_vs_S3_S3SD.csv WT_vs_WTSD_S3SD.csv WT_vs_WTSD_S3_S3SD.csv ./
+>>> python FigS10b_generate_venn_diagram.py 0.001 WT_WTSD WT_S3 WT_S3SD WT_vs_WTSD.csv WT_vs_S3.csv WT_vs_S3SD.csv WT_vs_WTSD_S3.csv WT_vs_S3_S3SD.csv WT_vs_WTSD_S3SD.csv WT_vs_WTSD_S3_S3SD.csv ./
 
 ================================================================================
 """
