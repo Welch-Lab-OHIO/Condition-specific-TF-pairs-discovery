@@ -13,6 +13,8 @@ Script written by: Michael Cooney
 
 Date: July 15, 2025
 
+Evaluate condition-related specificity of individual TFs
+
 This script generates an upset plot matrix showing the overlap of individual
 features across conditions, derived from a 4-set Venn diagram of feature pairs
 generated previously.
