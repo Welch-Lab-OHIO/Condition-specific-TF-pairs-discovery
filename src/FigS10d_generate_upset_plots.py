@@ -8,7 +8,7 @@ from upsetplot import UpSet, from_contents
 
 """
 ================================================================================
-Fig4i_generate_upset_plots.py
+FigS10d_generate_upset_plots.py
 Script written by: Michael Cooney
 
 Date: July 15, 2025
