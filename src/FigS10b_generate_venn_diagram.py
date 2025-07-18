@@ -12,7 +12,7 @@ Script written by: Michael Cooney
 Date: July 15, 2025
 
 Extract condition-specific discriminatory TF pairs in three
-condition-condition comparisons
+condition-condition comparisons and one-vs-all comparison
 
 This script generates a 3-set Venn diagram and a spreadsheet of significant
 feature pairs using lists of feature pairs and associated p-values.  
