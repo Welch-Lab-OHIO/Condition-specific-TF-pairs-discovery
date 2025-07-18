@@ -11,7 +11,7 @@ Script written by: Michael Cooney
 
 Date: July 15, 2025
 
-Compute TF pair frequencies in the annotated specific contact sets in three
+Extract condition-specific discriminatory TF pairs in three
 condition-condition comparisons
 
 This script generates a 3-set Venn diagram and a spreadsheet of significant
